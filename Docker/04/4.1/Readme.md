@@ -1,3 +1,4 @@
+```
 # 開一個每秒報數的容器
 docker run -d --name counter alpine sh -c 'i=0; while true; do i=$((i+1)); echo "第 $i 秒"; sleep 1; done'
 
@@ -14,3 +15,4 @@ docker ps --format 'table {{.Names}}	{{.Status}}'
 docker unpause counter
 docker logs --tail 5 counter
 docker rm -f counter
+```
