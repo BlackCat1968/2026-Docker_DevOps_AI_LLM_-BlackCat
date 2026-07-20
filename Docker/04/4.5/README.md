@@ -1,3 +1,4 @@
+```
 # 一:清單。自訂欄位輸出,只看重點
 docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}'
 
@@ -15,3 +16,4 @@ docker inspect web2 --format '狀態: {{.State.Status}} | IP: {{range .NetworkSe
 
 # 加碼:比對容器檔案系統與映像檔的差異(A 新增/C 修改/D 刪除)
 docker diff web2 | head -10
+```
