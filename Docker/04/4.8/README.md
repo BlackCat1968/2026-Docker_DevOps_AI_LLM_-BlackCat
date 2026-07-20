@@ -1,3 +1,4 @@
+```
 # 環境變數:-e 單發、--env-file 整批
 echo "APP_ENV=production
 DB_HOST=db.internal" > app.env
@@ -17,3 +18,4 @@ docker stop $(docker ps -q --filter label=team=backend)
 docker system df
 docker container prune -f
 docker system df
+```
