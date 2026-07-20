@@ -1,3 +1,4 @@
+```
 # 準備一個長駐容器
 docker run -d --name web2 nginx:alpine
 
@@ -16,3 +17,4 @@ docker exec -u root -w /etc/nginx web2 ls
 
 # attach:接管容器「主行程」的輸入輸出
 docker attach --sig-proxy=false web2
+```
